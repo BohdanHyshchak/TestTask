@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.youarelaunched.challenge.middle'
+    namespace 'com.youarelaunched.challenge'
     compileSdk gradleDependencies.compileSdk
 
     defaultConfig {
-        applicationId "com.youarelaunched.challenge.middle"
+        applicationId "com.youarelaunched.challenge"
         minSdk gradleDependencies.minSdk
         targetSdk gradleDependencies.targetSdk
         versionCode 1
@@ -19,6 +19,9 @@ android {
         vectorDrawables {
             useSupportLibrary true
         }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -80,4 +83,20 @@ dependencies {
     kapt hiltDependencies.kapt
 
     implementation retrofit.jsonConverter
+
+    testImplementation junit.junit
+    testImplementation junit.mockitoCore
+    testImplementation junit.mockitoInline
+    testImplementation junit.mockitoKotlin
+    testImplementation junit.coroutinesTest
+
+
+    androidTestImplementation androidTest.junitCompose
+    androidTestImplementation androidTest.testJunit
+
+    debugImplementation androidTestDebug.core
+    debugImplementation androidTestDebug.rules
+    debugImplementation androidTestDebug.runner
+    debugImplementation androidTestDebug.fragmentTest
+    debugImplementation androidTestDebug.manifestTest
 }

@@ -10,8 +10,8 @@ import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import com.google.accompanist.flowlayout.FlowRow
+import com.youarelaunched.challenge.R
 import com.youarelaunched.challenge.data.repository.model.VendorCategory
-import com.youarelaunched.challenge.middle.R
 import com.youarelaunched.challenge.ui.theme.VendorAppTheme
 
 @Composable

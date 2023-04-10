@@ -6,7 +6,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.youarelaunched.challenge.middle.R
+import com.youarelaunched.challenge.R
 
 private val SfUiTextFamily = FontFamily(
     listOf(
